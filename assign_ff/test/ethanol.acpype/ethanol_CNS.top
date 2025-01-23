@@ -1,0 +1,72 @@
+Remarks ethanol_CNS.top created by acpype (v: 2023.10.27) on Thu Jan 23 16:23:06 2025
+
+set echo=false end
+
+autogenerate angles=True dihedrals=True end
+
+{ atomType  mass }
+MASS c3_     12.010
+MASS oh_     16.000
+MASS hc_      1.008
+MASS h1_      1.008
+MASS ho_      1.008
+
+RESIdue UNL
+
+GROUP
+
+{ atomName  atomType  Charge }
+ATOM C     TYPE= c3_   CHARGE=  -0.1361 END
+ATOM C1    TYPE= c3_   CHARGE=   0.1264 END
+ATOM O     TYPE= oh_   CHARGE=  -0.5998 END
+ATOM H     TYPE= hc_   CHARGE=   0.0424 END
+ATOM H1    TYPE= hc_   CHARGE=   0.0424 END
+ATOM H2    TYPE= hc_   CHARGE=   0.0424 END
+ATOM H3    TYPE= h1_   CHARGE=   0.0432 END
+ATOM H4    TYPE= h1_   CHARGE=   0.0432 END
+ATOM H5    TYPE= ho_   CHARGE=   0.3960 END
+
+{ Bonds: atomName1  atomName2 }
+BOND C     H    
+BOND C     H1   
+BOND C     H2   
+BOND C1    H3   
+BOND C1    H4   
+BOND O     H5   
+BOND C     C1   
+BOND C1    O    
+
+{ Angles: atomName1 atomName2 atomName3}
+ANGLe C     C1    H3   
+ANGLe C     C1    H4   
+ANGLe C1    C     H    
+ANGLe C1    C     H1   
+ANGLe C1    C     H2   
+ANGLe C1    O     H5   
+ANGLe O     C1    H3   
+ANGLe O     C1    H4   
+ANGLe H     C     H1   
+ANGLe H     C     H2   
+ANGLe H1    C     H2   
+ANGLe H3    C1    H4   
+ANGLe C     C1    O    
+
+{ Proper Dihedrals: name1 name2 name3 name4 }
+DIHEdral C     C1    O     H5   
+DIHEdral H     C     C1    O    
+DIHEdral H1    C     C1    O    
+DIHEdral H2    C     C1    O    
+DIHEdral H     C     C1    H3   
+DIHEdral H     C     C1    H4   
+DIHEdral H1    C     C1    H3   
+DIHEdral H1    C     C1    H4   
+DIHEdral H2    C     C1    H3   
+DIHEdral H2    C     C1    H4   
+DIHEdral H3    C1    O     H5   
+DIHEdral H4    C1    O     H5   
+
+{ Improper Dihedrals: aName1 aName2 aName3 aName4 }
+
+END {RESIdue UNL}
+
+set echo=true end

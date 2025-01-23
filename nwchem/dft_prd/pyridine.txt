@@ -1,0 +1,31 @@
+echo
+
+start molecule
+
+title "pyridine"
+charge 0
+
+geometry units angstroms print xyz autosym
+   C       -1.39938       -0.07701       -0.00209
+   C       -0.76415        1.16039        0.00885
+   C        0.62139        1.18599        0.01763
+   N        1.39347        0.07748        0.01620
+   C        0.74844       -1.10942        0.00549
+   C       -0.63147       -1.23679       -0.00383
+   H       -2.48382       -0.13699       -0.00919
+   H       -1.33392        2.08257        0.01049
+   H        1.16360        2.12708        0.02631
+   H        1.39120       -1.98496        0.00456
+   H       -1.09599       -2.21617       -0.01225
+end
+
+basis
+  * library 6-31G*
+end
+
+dft
+  xc b3lyp
+  mult 1
+end
+
+task dft optimize

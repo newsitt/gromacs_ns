@@ -1,0 +1,36 @@
+Remarks ethanol_CNS.par created by acpype (v: 2023.10.27) on Thu Jan 23 16:23:06 2025
+
+set echo=false end
+
+{ Bonds: atomType1 atomType2 kb r0 }
+BOND   c3_   hc_    345.2   1.0962
+BOND   c3_   h1_    344.2   1.0969
+BOND   oh_   ho_    535.5   0.9725
+BOND   c3_   c3_    228.9   1.5354
+BOND   c3_   oh_    285.1   1.4242
+
+{ Angles: aType1 aType2 aType3 kt t0 }
+ANGLe   c3_   c3_   h1_     43.3   109.59
+ANGLe   c3_   c3_   hc_     43.3   109.68
+ANGLe   c3_   oh_   ho_     65.1   107.39
+ANGLe   oh_   c3_   h1_     56.3   110.38
+ANGLe   hc_   c3_   hc_     35.8   107.73
+ANGLe   h1_   c3_   h1_     35.6   108.55
+ANGLe   c3_   c3_   oh_     76.8   109.66
+
+{ Proper Dihedrals: aType1 aType2 aType3 aType4 kt period phase }
+DIHEdral   h1_   c3_   oh_   ho_           0.123    3     0.00
+DIHEdral   hc_   c3_   c3_   oh_           0.090    3     0.00
+DIHEdral   hc_   c3_   c3_   h1_           0.156    3     0.00
+DIHEdral   c3_   c3_   oh_   ho_           0.060    3     0.00
+
+{ Improper Dihedrals: aType1 aType2 aType3 aType4 kt period phase }
+
+{ Nonbonded: Type Emin sigma; (1-4): Emin/2 sigma }
+NONBonded   c3_    0.107800    3.397710    0.053900    3.397710
+NONBonded   oh_    0.093000    3.242871    0.046500    3.242871
+NONBonded   hc_    0.020800    2.600177    0.010400    2.600177
+NONBonded   h1_    0.020800    2.421997    0.010400    2.421997
+NONBonded   ho_    0.004700    0.537925    0.002350    0.537925
+
+set echo=true end
