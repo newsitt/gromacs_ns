@@ -1,0 +1,19 @@
+; bdc_GMX_OPLS.top created by acpype (v: 2023.10.27) on Fri Jan 24 13:41:52 2025
+
+; Include forcefield parameters
+#include "ffoplsaa.itp"
+
+; Include bdc_GMX.itp topology
+#include "bdc_GMX.itp"
+
+; Ligand position restraints
+#ifdef POSRES_LIG
+#include "posre_bdc.itp"
+#endif
+
+[ system ]
+ bdc
+
+[ molecules ]
+; Compound        nmols
+ bdc              1     

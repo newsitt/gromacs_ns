@@ -1,0 +1,20 @@
+; bdc_GMX.top created by acpype (v: 2023.10.27) on Fri Jan 24 13:41:52 2025
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333333333
+
+; Include bdc_GMX.itp topology
+#include "bdc_GMX.itp"
+
+; Ligand position restraints
+#ifdef POSRES_LIG
+#include "posre_bdc.itp"
+#endif
+
+[ system ]
+ bdc
+
+[ molecules ]
+; Compound        nmols
+ bdc              1     

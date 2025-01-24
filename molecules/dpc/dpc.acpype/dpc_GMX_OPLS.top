@@ -1,0 +1,19 @@
+; dpc_GMX_OPLS.top created by acpype (v: 2023.10.27) on Fri Jan 24 13:47:20 2025
+
+; Include forcefield parameters
+#include "ffoplsaa.itp"
+
+; Include dpc_GMX.itp topology
+#include "dpc_GMX.itp"
+
+; Ligand position restraints
+#ifdef POSRES_LIG
+#include "posre_dpc.itp"
+#endif
+
+[ system ]
+ dpc
+
+[ molecules ]
+; Compound        nmols
+ dpc              1     

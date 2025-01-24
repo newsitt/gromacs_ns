@@ -1,0 +1,20 @@
+; dlib_GMX.top created by acpype (v: 2023.10.27) on Fri Jan 24 13:43:09 2025
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333333333
+
+; Include dlib_GMX.itp topology
+#include "dlib_GMX.itp"
+
+; Ligand position restraints
+#ifdef POSRES_LIG
+#include "posre_dlib.itp"
+#endif
+
+[ system ]
+ dlib
+
+[ molecules ]
+; Compound        nmols
+ dlib             1     

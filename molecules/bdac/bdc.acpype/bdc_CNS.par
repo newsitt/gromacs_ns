@@ -1,0 +1,62 @@
+Remarks bdc_CNS.par created by acpype (v: 2023.10.27) on Fri Jan 24 13:41:52 2025
+
+set echo=false end
+
+{ Bonds: atomType1 atomType2 kb r0 }
+BOND   c3_   hc_    345.2   1.0962
+BOND   c3_   hx_    352.9   1.0911
+BOND   ca_   ha_    360.7   1.0860
+BOND   c3_   c3_    228.9   1.5354
+BOND   c3_   n4_    215.9   1.5167
+BOND   c3_   ca_    243.9   1.5147
+BOND   ca_   ca_    354.2   1.3986
+
+{ Angles: aType1 aType2 aType3 kt t0 }
+ANGLe   c3_   c3_   hc_     43.3   109.68
+ANGLe   c3_   c3_   hx_     43.2   110.28
+ANGLe   n4_   c3_   hx_     46.8   108.17
+ANGLe   ca_   c3_   hx_     43.5   111.41
+ANGLe   ca_   ca_   ha_     44.9   119.88
+ANGLe   hc_   c3_   hc_     35.8   107.73
+ANGLe   hx_   c3_   hx_     35.6   109.79
+ANGLe   c3_   c3_   c3_     59.9   112.63
+ANGLe   c3_   c3_   n4_     62.9   116.26
+ANGLe   c3_   n4_   c3_     76.0   109.36
+ANGLe   n4_   c3_   ca_     63.5   115.67
+ANGLe   c3_   ca_   ca_     60.7   120.83
+ANGLe   ca_   ca_   ca_     63.7   120.02
+
+{ Proper Dihedrals: aType1 aType2 aType3 aType4 kt period phase }
+DIHEdral   c3_   n4_   c3_   ca_  MULT 2   0.700    2     0.00
+                                           0.156    3     0.00
+DIHEdral   n4_   c3_   c3_   hc_           0.156    3     0.00
+DIHEdral   ca_   ca_   ca_   ca_           3.625    2   180.00
+DIHEdral   n4_   c3_   ca_   ca_           0.000    0     0.00
+DIHEdral   hc_   c3_   c3_   hc_           0.120    3     0.00
+DIHEdral   c3_   n4_   c3_   hx_           0.156    3     0.00
+DIHEdral   c3_   c3_   c3_   hc_           0.130    3     0.00
+DIHEdral   hc_   c3_   c3_   hx_           0.156    3     0.00
+DIHEdral   c3_   ca_   ca_   ca_           3.625    2   180.00
+DIHEdral   ca_   ca_   c3_   hx_           0.000    0     0.00
+DIHEdral   c3_   c3_   c3_   n4_           0.210    3     0.00
+DIHEdral   ca_   ca_   ca_   ha_           3.625    2   180.00
+DIHEdral   hc_   c3_   c3_   c3_           0.130    3     0.00
+DIHEdral   c3_   c3_   n4_   c3_           0.156    3     0.00
+DIHEdral   c3_   ca_   ca_   ha_           3.625    2   180.00
+DIHEdral   ha_   ca_   ca_   ha_           3.625    2   180.00
+DIHEdral   c3_   c3_   c3_   c3_           0.520    3     0.00
+DIHEdral   c3_   c3_   c3_   hx_           0.156    3     0.00
+
+{ Improper Dihedrals: aType1 aType2 aType3 aType4 kt period phase }
+IMPRoper   ca_   ca_   ca_   ha_           1.1    2   180.00
+IMPRoper   ca_   ca_   ca_   c3_           1.1    2   180.00
+
+{ Nonbonded: Type Emin sigma; (1-4): Emin/2 sigma }
+NONBonded   c3_    0.107800    3.397710    0.053900    3.397710
+NONBonded   n4_    3.874800    2.499505    1.937400    2.499505
+NONBonded   ca_    0.098800    3.315212    0.049400    3.315212
+NONBonded   hc_    0.020800    2.600177    0.010400    2.600177
+NONBonded   hx_    0.020800    1.887458    0.010400    1.887458
+NONBonded   ha_    0.016100    2.625479    0.008050    2.625479
+
+set echo=true end

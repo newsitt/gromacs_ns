@@ -1,0 +1,67 @@
+* Force Field Parameter File.
+* 
+
+BOND
+c3 c3  300.90   1.538
+c3 hc  330.60   1.097
+c3 na  327.70   1.463
+c3 h1  330.60   1.097
+cc na  425.80   1.380
+cc cd  500.90   1.373
+cc h4  352.00   1.082
+cd na  425.80   1.380
+cd h4  352.00   1.082
+cc h5  351.70   1.082
+
+ANGLE
+c3 c3 c3   62.900     111.510
+c3 c3 hc   46.300     109.800
+c3 c3 na   65.500     112.880
+c3 c3 h1   46.400     109.560
+c3 na cc   61.900     126.460
+na c3 h1   49.800     108.780
+na cc cd   73.400     106.990
+na cc h4   49.800     120.530
+na cc na   75.200     106.600
+na cc h5   49.600     121.550
+cc na cc   68.500     109.900
+cc cd na   73.400     106.990
+cc cd h4   47.300     128.480
+cd cc h4   47.300     128.480
+cd na cc   63.500     128.010
+cd na c3   61.900     126.460
+na cd h4   49.800     120.530
+hc c3 hc   39.400     107.580
+h1 c3 h1   39.200     108.460
+
+DIHEDRAL
+hc c3 c3 c3     0.160         3       0.0
+X  c3 c3 X      0.156         3       0.0
+hc c3 c3 hc     0.150         3       0.0
+c3 c3 c3 c3     0.180         3       0.0
+c3 c3 c3 c3     0.250         2     180.0
+c3 c3 c3 c3     0.200         1     180.0
+X  c3 na X      0.000         2       0.0
+X  cc na X      1.700         2     180.0
+X  cc cd X      4.000         2     180.0
+X  cd na X      1.700         2     180.0
+
+IMPHI
+c3 cc na cc     1.100         2     180.0	! Using default value
+cd h4 cc na     1.100         2     180.0	! Using default value
+cc h4 cd na     1.100         2     180.0	! Using default value
+c3 cc na cd     1.100         2     180.0	! Using default value
+h5 na cc na     1.100         2     180.0	! Using default value
+
+NONBONDED  NBXMOD 5  GROUP SWITCH CDIEL -
+CUTNB 14.0  CTOFNB 12.0  CTONNB 10.0  EPS 1.0  E14FAC 0.83333333  WMIN 1.4
+!                Emin     Rmin/2              Emin/2     Rmin  (for 1-4's)
+!             (kcal/mol)    (A)
+c3      0.00   -0.1094    1.9080      0.00   -0.0547    1.9080
+na      0.00   -0.1700    1.8240      0.00   -0.0850    1.8240
+cc      0.00   -0.0860    1.9080      0.00   -0.0430    1.9080
+cd      0.00   -0.0860    1.9080      0.00   -0.0430    1.9080
+hc      0.00   -0.0157    1.4870      0.00   -0.0078    1.4870
+h1      0.00   -0.0157    1.3870      0.00   -0.0078    1.3870
+h4      0.00   -0.0150    1.4090      0.00   -0.0075    1.4090
+h5      0.00   -0.0150    1.3590      0.00   -0.0075    1.3590
