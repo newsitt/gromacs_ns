@@ -504,7 +504,6 @@ property
   dipole
   mulliken
   esp
-  output_density
 end
 
 title "PROPERTY CALCULATION"
