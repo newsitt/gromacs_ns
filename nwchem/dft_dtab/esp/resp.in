@@ -1,0 +1,6 @@
+&cntrl
+ nmol=1,
+ ihfree=1,
+ iqopt=2,
+ qwt=0.0005,
+/
