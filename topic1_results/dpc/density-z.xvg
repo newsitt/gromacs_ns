@@ -1,0 +1,74 @@
+# This file was created Sun Feb  9 17:27:18 2025
+# Created by:
+#                     :-) GROMACS - gmx density, 2024.2 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /mnt/new_volume/newsitt/topic1_results/dpc_20250206
+# Command line:
+#   gmx density -f prd.xtc -s prd.tpr -o density-z.xvg -d z
+# gmx density is part of G R O M A C S:
+#
+# Gnomes, ROck Monsters And Chili Sauce
+#
+@    title "Partial density"
+@    xaxis  label "Average coordinate (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "UNL"
+        0.05                0
+        0.15                0
+        0.25                0
+        0.35                0
+        0.45                0
+        0.55                0
+        0.65                0
+        0.75                0
+        0.85                0
+        0.95      0.000185962
+        1.05          3.74132
+        1.15          151.151
+        1.25          214.513
+        1.35          58.9859
+        1.45          13.4543
+        1.55           7.0285
+        1.65          3.75917
+        1.75          2.23327
+        1.85          1.82841
+        1.95          1.15224
+        2.05         0.383792
+        2.15        0.0880736
+        2.25         0.025148
+        2.35       0.00204558
+        2.45                0
+        2.55                0
+        2.65                0
+        2.75                0
+        2.85                0
+        2.95                0
+        3.05                0
+        3.15                0
+        3.25                0
+        3.35                0
+        3.45                0
+        3.55                0
+        3.65                0
+        3.75                0
+        3.85                0
+        3.95                0
+        4.05                0
+        4.15                0
+        4.25                0
+        4.35                0
+        4.45                0
+        4.55                0
+        4.65                0
+        4.75                0
+        4.85                0
+        4.95                0
